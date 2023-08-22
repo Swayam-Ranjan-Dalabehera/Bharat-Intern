@@ -9,7 +9,7 @@ index.html
 
 FOR CSS PART
 =============
-styles.css
+style.css
 
 FOR JS PART
 ============
