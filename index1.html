@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Meet</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav>
+            <img src="Image/logo.png" class="logo">
+            <ul>
+                <li><img src="Image/live.png" class="active"></li>
+                <li><img src="Image/video.png"></li>
+                <li><img src="Image/message.png"></li>
+                <li><img src="Image/notification.png"></li>
+                <li><img src="Image/users.png"></li>
+                <li><img src="Image/setting.png"></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="top-icons">
+                <img src="Image/search.png">
+                <img src="Image/menu.png">
+            </div>
+            <div class="row">
+                <div class="col-1">
+                    <video controls autoplay muted loop height="600" width="500" class="host-video">
+                        <source src="./Image/video.mp4">
+                    </video>
+                    <div class="controls">
+                        <img src="Image/chat.png">
+                        <img src="Image/disconnect.png">
+                        <img src="Image/call.png" class="call-icon">
+                        <img src="Image/mic.png">
+                        <img src="Image/cast.png">
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="joined">
+                        <p>People Joined</p>
+                        <div>
+                            <img src="Image/people-1.png">
+                            <img src="Image/people-2.png">
+                            <img src="Image/people-3.png">
+                            <img src="Image/people-4.png">
+                            <img src="Image/people-5.png">
+                        </div>
+                    </div>
+                    <div class="invite">
+                        <p>Invite More People</p>
+                        <div>
+                            <img src="Image/user-1.png">
+                            <img src="Image/user-2.png">
+                            <img src="Image/user-3.png">
+                            <img src="Image/user-4.png">
+                            <img src="Image/user-5.png">
+                        </div>
+                    </div>
+                    <div class="chat">
+                        <p>Messages</p>
+                        <button type="submit" class="btn" onclick="openPopup()">Chat</button>
+                        <div class="popup" id="popup">
+                            <img src="./Image/chats.png" alt="chat">
+                            <h2>Your Chats!!!</h2>
+                            <p>Type here to whom u want to chat with....</p>
+                            <button type="button" onclick="closePopup()">Close</button>
+                        </div>
+                    </div>
+                    <script>
+                        let popup = document.getElementById("popup");
+                        function openPopup() {
+                            popup.classList.add("open-popup");
+                        }
+                        function closePopup() {
+                            popup.classList.remove("open-popup");
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
